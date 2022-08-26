@@ -1,5 +1,7 @@
 package com.kata.tower.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +19,7 @@ public class BuildTowerController {
 	BuildTowerServiceImpl buildTowerServiceImpl;
 	
 	@GetMapping("/tower/{numberOfFloors}")
-	public ResponseEntity<String> getpyramidShapedTower (@PathVariable("numberOfFloors") Integer numberOfFloors){
+	public ResponseEntity<List<String>> getpyramidShapedTower (@PathVariable("numberOfFloors") Integer numberOfFloors){
 		return buildTowerServiceImpl.getPyramidShapedTower(numberOfFloors);
 	}
 
