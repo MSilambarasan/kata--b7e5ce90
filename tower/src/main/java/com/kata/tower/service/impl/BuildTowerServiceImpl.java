@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import com.kata.tower.exception.InvalidInputException;
 import com.kata.tower.service.BuildTowerService;
 
 @Service
@@ -18,7 +19,7 @@ public class BuildTowerServiceImpl implements BuildTowerService {
 		if (numberOfFloors > 0) {
 			return getPyramid(numberOfFloors);
 		} else {
-			return new ResponseEntity<List<String>>(new ArrayList<String>(), HttpStatus.BAD_REQUEST);
+			throw new InvalidInputException("Invalid Argument - It should be greater than Zero");
 		}
 	}
 
