@@ -1,6 +1,5 @@
 # kata--b7e5ce90
 
-# kata--b7e5ce90
 Step 1: Clone the project by using the below comment
 	      git clone https://github.com/MSilambarasan/kata--b7e5ce90.git
 
