@@ -7,7 +7,7 @@ Step 2: Open eclipse and import the sources (Existing maven project)
 
 Step 3: Once the source is imported, From eclipse right click the project -> Run As -> maven clean
 
-Step 4: Right click the project -> Run As -> maven install (Junit test will be execute)
+Step 4: Right click the project -> Run As -> maven install (It will downloads all the dependences and will execute the junit test cases)
 
 Step 5: Right click the project -> Maven -> Update Project
 
@@ -19,3 +19,5 @@ Step 7: Open TowerApplication.java file -> Right click -> Run AS -> Java Applica
 Step 8: The application will start on port 8081
 
 Step 9: http://localhost:8081/api/v1/tower/3
+
+Note : After executing all the steps, if you face any compilation error, then remove the repository from .m2 folder and re execute all the steps
