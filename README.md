@@ -1,12 +1,18 @@
 # kata--b7e5ce90
 
-Technologies used:
+Technologies used
 ==================
 
 Spring Boot 2.7.3
+
 Maven 3.8.6
+
 Java 1.8.0_202
+
 Junit 4.13.2
+
+Steps to Execute
+================
 
 Step 1: Clone the project by using the below comment
 	      git clone https://github.com/MSilambarasan/kata--b7e5ce90.git
